@@ -1,0 +1,26 @@
+# Python
+venv
+__pycache__
+*.pyc
+
+# Environment
+.env
+
+# Storage (VERY IMPORTANT)
+storage/*
+uploads/*
+outputs/*
+
+# Git
+.git
+.gitignore
+
+# OS
+.DS_Store
+
+# Logs
+*.log
+
+# Misc
+*.zip
+*.tar
