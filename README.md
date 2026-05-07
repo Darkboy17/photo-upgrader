@@ -78,6 +78,35 @@ cd backend
 python -m venv venv
 venv\Scripts\activate  # Windows
 pip install -r requirements.txt
+```
+
+ Create a .env file and place it in the root directory (backend). Add the following:
+
+ ```bash
+APP_NAME=Photo Upgrader API
+APP_ENV=development
+APP_DEBUG=true
+
+BACKEND_BASE_URL=http://localhost:8000
+
+CORS_ORIGINS=http://localhost:3000,http://127.0.0.1:3000
+
+MAX_UPLOAD_MB=12
+ALLOWED_IMAGE_TYPES=image/jpeg,image/png,image/webp
+
+STORAGE_INPUT_DIR=storage/inputs
+STORAGE_OUTPUT_DIR=storage/outputs
+
+
+BRIA_API_KEY=get_your_bria_api_key
+DEFAULT_PROVIDER=bria_relight
+
+BRIA_LIGHT_TYPE=soft overcast daylight lighting
+BRIA_LIGHT_DIRECTION=front
+ ```
+
+Then run the backend:
+```bash
 .\run.ps1
 ```
 
@@ -88,6 +117,16 @@ pip install -r requirements.txt
 ```bash
 cd frontend
 npm install
+```
+
+Create a .env.local file in the root directory (fronted). Add the following:
+
+```bash
+BACKEND_API_URL=http://localhost:8000
+```
+
+Then run the frontend:
+```bash
 npm run dev
 ```
 
