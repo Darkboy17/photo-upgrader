@@ -132,25 +132,6 @@ npm run dev
 
 ---
 
-## 🔐 Environment Variables
-
-### Backend (`.env`)
-
-```
-BRIA_API_KEY=
-BACKEND_BASE_URL=http://localhost:8000
-CORS_ORIGINS=http://localhost:3000
-DEFAULT_PROVIDER=bria_relight
-```
-
-### Frontend (`.env.local`)
-
-```
-BACKEND_API_URL=http://localhost:8000
-```
-
----
-
 ## 🎯 Key Learnings
 
 - Designing scalable AI pipelines
